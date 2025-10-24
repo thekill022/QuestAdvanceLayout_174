@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
             Praktikum_2Theme {
                 // A surface container using the 'background' color from the theme
                 Scaffold {
-                    innerPadding -> layout(modifier = Modifier.padding(innerPadding).padding(top = 20.dp).fillMaxSize())
+                    innerPadding -> profile(modifier = Modifier.padding(innerPadding).padding(top = 20.dp).fillMaxSize())
                 }
             }
         }
