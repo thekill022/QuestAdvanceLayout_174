@@ -17,4 +17,6 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun layout(modifier : Modifier) {
-}
+    Column(modifier = modifier) {
+    }
+    }
