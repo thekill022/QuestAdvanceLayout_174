@@ -2,6 +2,7 @@ package com.example.praktikum_2
 
 import android.graphics.drawable.Drawable
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,8 +29,8 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun layout(modifier : Modifier) {
-    Column(modifier = modifier) {
-        Text(stringResource(id = R.string.title), fontSize = 20.sp, fontWeight = FontWeight.Bold)
+    Column(modifier = modifier, horizontalAlignment = Alignment.CenterHorizontally) {
+        Text(stringResource(id = R.string.title), fontSize = 30.sp, fontWeight = FontWeight.Bold)
         Text(stringResource(id = R.string.univ), modifier = Modifier.padding(bottom = 20.dp))
 
         Card(
@@ -50,20 +51,18 @@ fun layout(modifier : Modifier) {
                     .padding(5.dp))
                 Spacer(modifier = Modifier.width(30.dp))
                 Column {
-                    Text(stringResource(id = R.string.name), fontSize = 30.sp, fontFamily = FontFamily.Cursive, color = Color.White, modifier = Modifier.padding(top = 15.dp))
+                    Text(stringResource(id = R.string.name), fontSize = 30.sp, fontFamily = FontFamily.Cursive, color = Color.White, modifier = Modifier.padding(top = 10.dp))
                     Text(stringResource(id = R.string.alamat), color = Color.Yellow, fontSize = 20.sp, modifier = Modifier.padding(top= 10.dp))
                 }
-
-                Box(modifier = Modifier.fillMaxSize()) {
-                    Text(
-                        stringResource(id = R.string.copy),
-                        modifier = Modifier
-                            .align(alignment = Alignment.BottomCenter)
-                            .padding(bottom = 50.dp)
-                    )
-                }
-
             }
         }
+        Box(modifier = Modifier.fillMaxSize()) {
+            Text(
+                stringResource(id = R.string.copy),
+                modifier = Modifier
+                    .align(alignment = Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
-    }
+}
