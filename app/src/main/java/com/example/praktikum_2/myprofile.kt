@@ -33,6 +33,10 @@ fun profile(modifier : Modifier) {
             .padding(bottom = 20.dp))
 
         Row {
+            val fb = painterResource(id = R.drawable.fb)
+            val ig = painterResource(id = R.drawable.ig)
+            val x = painterResource(id = R.drawable.x)
+            val git = painterResource(id = R.drawable.github)
 
         }
 
