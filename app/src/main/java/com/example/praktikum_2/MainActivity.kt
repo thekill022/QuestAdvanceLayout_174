@@ -23,11 +23,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             Praktikum_2Theme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+                Scaffold {
+                    innerPadding -> layout(modifier = Modifier.padding(innerPadding).fillMaxSize())
                 }
             }
         }
