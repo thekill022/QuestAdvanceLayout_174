@@ -21,7 +21,7 @@ fun layout(modifier : Modifier) {
         Text(stringResource(id = R.string.title), fontSize = 20.sp, fontWeight = FontWeight.Bold)
         Text(stringResource(id = R.string.univ), modifier = Modifier.padding(bottom = 20.dp))
 
-        Row {
+        Row(modifier = Modifier.fillMaxWidth().padding(start = 20.dp, end = 20.dp)) {
 
         }
     }
