@@ -19,5 +19,6 @@ import androidx.compose.ui.unit.sp
 fun layout(modifier : Modifier) {
     Column(modifier = modifier) {
         Text(stringResource(id = R.string.title), fontSize = 20.sp, fontWeight = FontWeight.Bold)
+        Text(stringResource(id = R.string.univ), modifier = Modifier.padding(bottom = 20.dp))
     }
     }
