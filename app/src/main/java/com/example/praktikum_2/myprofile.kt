@@ -72,7 +72,8 @@ fun profile(modifier : Modifier) {
                 ), contentScale = ContentScale.Crop)
         }
         
-        Text(stringResource(id = R.string.name), modifier = Modifier.padding(top = 15.dp), fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White)
+        Text(stringResource(id = R.string.name), modifier = Modifier.padding(top = 15.dp, bottom = 5.dp), fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White)
+        Text(stringResource(id = R.string.username), color = Color.LightGray, fontSize = 20.sp)
 
     }
 
