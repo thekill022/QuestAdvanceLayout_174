@@ -1,12 +1,14 @@
 package com.example.praktikum_2
 
 import android.graphics.drawable.Drawable
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -26,6 +28,9 @@ fun layout(modifier : Modifier) {
             .fillMaxWidth()
             .padding(start = 20.dp, end = 20.dp)) {
             val image = painterResource(id = R.drawable.umy)
+
+            Image(painter = image, contentDescription = "logo umy", modifier = Modifier.size(size = 100.dp).padding(5.dp))
+
         }
     }
     }
