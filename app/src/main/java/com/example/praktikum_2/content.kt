@@ -39,6 +39,7 @@ fun layout(modifier : Modifier) {
             Spacer(modifier = Modifier.width(30.dp))
             Column {
                 Text(stringResource(id = R.string.name), fontSize = 30.sp, fontFamily = FontFamily.Cursive, color = Color.White, modifier = Modifier.padding(top = 15.dp))
+                Text(stringResource(id = R.string.alamat), color = Color.Yellow, fontSize = 20.sp, modifier = Modifier.padding(top= 10.dp))
             }
 
         }
