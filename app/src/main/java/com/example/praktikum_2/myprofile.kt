@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -74,6 +75,15 @@ fun profile(modifier : Modifier) {
         
         Text(stringResource(id = R.string.name), modifier = Modifier.padding(top = 15.dp, bottom = 5.dp), fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White)
         Text(stringResource(id = R.string.username), color = Color.LightGray, fontSize = 20.sp)
+
+        val menu : Map<String, String> = mapOf("privacy" to "Privacy", "riwayat" to "Riwayat Transaksi", "pengaturan" to "Pengaturan")
+
+        val privacy = painterResource(id = R.drawable.privacy)
+        val riwayat = painterResource(id = R.drawable.riwayat)
+        val setting = painterResource(id = R.drawable.setting)
+
+        val icon : Map<String, Painter> = mapOf("privacy" to privacy, "riwayat" to riwayat, "pengaturan" to setting)
+
 
     }
 
