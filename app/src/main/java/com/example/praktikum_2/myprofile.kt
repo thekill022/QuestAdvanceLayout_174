@@ -39,6 +39,15 @@ fun profile(modifier : Modifier) {
             val gmail = painterResource(id = R.drawable.gmail)
             val linkedin = painterResource(id = R.drawable.linkedin)
 
+            Image(painter = fb, contentDescription = "fb", modifier = Modifier.size(size = 50.dp).padding(end = 10.dp).clip(
+                CircleShape), contentScale = ContentScale.FillWidth)
+            Image(painter = ig, contentDescription = "ig", modifier = Modifier.size(size = 50.dp).padding(end = 10.dp).clip(
+                CircleShape), contentScale = ContentScale.FillWidth)
+            Image(painter = gmail, contentDescription = "gmail", modifier = Modifier.size(size = 50.dp).padding(end = 10.dp).clip(
+                CircleShape), contentScale = ContentScale.FillWidth)
+            Image(painter = linkedin, contentDescription = "linkedin", modifier = Modifier.size(size = 50.dp).padding(end = 10.dp).clip(
+                CircleShape), contentScale = ContentScale.Inside)
+
         }
 
     }
