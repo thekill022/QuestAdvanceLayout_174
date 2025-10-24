@@ -3,6 +3,8 @@ package com.example.praktikum_2
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
@@ -23,8 +25,16 @@ fun profile(modifier : Modifier) {
     ) {
         val image = painterResource(id = R.drawable.gibran)
 
-        Image(painter = image, contentDescription = "Gibran", modifier = Modifier.size(size = 200.dp).clip(
-            CircleShape))
+        Image(painter = image, contentDescription = "Gibran", modifier = Modifier
+            .size(size = 200.dp)
+            .clip(
+                CircleShape
+            )
+            .padding(bottom = 20.dp))
+
+        Row {
+
+        }
 
     }
 
