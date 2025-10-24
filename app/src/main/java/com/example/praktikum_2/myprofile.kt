@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
@@ -30,13 +31,13 @@ fun profile(modifier : Modifier) {
             .clip(
                 CircleShape
             )
-            .padding(bottom = 20.dp))
+            .padding(bottom = 20.dp), contentScale = ContentScale.Crop)
 
         Row {
             val fb = painterResource(id = R.drawable.fb)
             val ig = painterResource(id = R.drawable.ig)
-            val x = painterResource(id = R.drawable.x)
-            val git = painterResource(id = R.drawable.github)
+            val gmail = painterResource(id = R.drawable.gmail)
+            val linkedin = painterResource(id = R.drawable.linkedin)
 
         }
 
