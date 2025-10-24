@@ -18,6 +18,6 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun layout(modifier : Modifier) {
     Column(modifier = modifier) {
-        Text(stringResource(id = R.string.title))
+        Text(stringResource(id = R.string.title), fontSize = 20.sp, fontWeight = FontWeight.Bold)
     }
     }
